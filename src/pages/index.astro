@@ -1,9 +1,50 @@
 ---
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from '../layouts/Layout.astro'
+import { Icon } from 'astro-icon/components'
 ---
 
-<Layout>
+<Layout title="Șerban Untu" description="Welcome to my website">
+	<main class="w-full max-w-3xl mx-auto flex flex-col gap-4 text-lg p-8">
+		<h1 class="text-4xl font-semibold">Șerban Untu</h1>
+		<p class="text-xl">Software engineer & entrepreneur.</p>
+		<div class="flex items-center gap-2">
+			<Icon name="map-pin" />
+			<p>Iași, Romania</p>
+		</div>
+		<p class="text-justify">
+			I'm the founder of
+			<a href="https://www.projectclub.dev" target="_blank" class="text-primary underline"
+				><img
+					src="/projectclub.svg"
+					alt=""
+					class="w-4 h-4 inline-block relative -top-px mr-1"
+				/>Project Club</a
+			>, a platform for learning advanced programming concepts by building projects. I'm also Head
+			of Development at
+			<a
+				href="https://www.aerovia.org"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="text-primary underline">
+				<img
+					src="/aerovia.svg"
+					alt=""
+					class="w-4 h-4 inline-block relative -top-px mr-1"
+				/>AeroVia</a
+			>, a non-profit organization and community that makes aerospace engineering accessible to
+			everyone.
+		</p>
+		<nav class="flex flex-col items-center gap-4 mt-8">
+			<a
+				href="/projects"
+				class="bg-primary text-background hover:opacity-80 border rounded-lg transition-opacity py-4 w-full h-full block text-center max-w-sm"
+				>View my projects</a
+			>
+			<a
+				href="/contact"
+				class="hover:bg-muted/20 border rounded-lg transition-colors py-4 w-full h-full block text-center max-w-sm"
+				>Contact me</a
+			>
+		</nav>
+	</main>
 </Layout>

@@ -1,0 +1,290 @@
+---
+import Skills from '../components/Skills.astro'
+import Layout from '../layouts/Layout.astro'
+import { Icon } from 'astro-icon/components'
+---
+
+<Layout
+	title="Projects | Șerban Untu"
+	description="A list of organizations I'm a part of, and open source projects I've worked on.">
+	<main class="w-full max-w-3xl mx-auto flex flex-col gap-4 text-lg p-8">
+		<h1 class="text-4xl font-semibold">Projects</h1>
+		<p class="text-xl">
+			A list of organizations I'm a part of, and open source projects I've worked on.
+		</p>
+		<ul class="flex flex-col gap-4 mt-8">
+			<li
+				class="border border-projectclub/30 rounded-lg p-4 bg-gradient-to-br from-projectclub/20 to-projectclub/10 flex flex-col gap-4">
+				<div class="flex flex-col sm:flex-row items-center gap-2">
+					<img src="/projectclub.svg" alt="Project Club" class="w-8 h-8" />
+					<h2 class="text-2xl font-semibold">Project Club</h2>
+					<span class="text-sm text-muted-foreground relative top-px">May 2025 - Present</span>
+				</div>
+				<Skills
+					skills={[
+						'Technical Writing',
+						'Stripe',
+						'Marketing',
+						'Copywriting',
+						'SEO',
+						'Better-auth',
+						'OAuth 2.0',
+					]}
+				/>
+				<p class="text-lg us:text-justify">
+					Project Club is a platform for learning advanced programming concepts by building
+					end-to-end projects, with tailored learning paths and feedback at every step.
+				</p>
+				<a
+					href="https://www.projectclub.dev"
+					target="_blank"
+					class="bg-projectclub text-background rounded-lg px-4 py-2 text-center mx-auto w-full max-w-[300px] transition-colors hover:bg-projectclub/80"
+					>View Project Club</a
+				>
+			</li>
+			<li
+				class="border border-aerovia1/30 rounded-lg p-4 bg-gradient-to-br from-aerovia1/20 to-aerovia2/20 flex flex-col gap-4">
+				<div class="flex flex-col sm:flex-row items-center gap-2">
+					<img src="/aerovia.svg" alt="AeroVia" class="w-8 h-8" />
+					<h2 class="text-2xl font-semibold">AeroVia</h2>
+					<span class="text-sm text-muted-foreground relative top-px">December 2024 - Present</span>
+				</div>
+				<Skills
+					skills={[
+						'Next.js',
+						'Tailwind',
+						'TypeScript',
+						'AI SDK',
+						'Vercel',
+						'React Server Components',
+						'Convex',
+						'Drizzle',
+						'PostgreSQL',
+						'Supabase',
+					]}
+				/>
+				<p class="text-lg us:text-justify">
+					AeroVia is a non-profit organization and community the goal of which is to make aerospace
+					engineering accessible to everyone. It has a wide range of courses, resources, and AI
+					features.
+				</p>
+				<a
+					href="https://www.aerovia.org"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="bg-gradient-to-r from-aerovia1 to-aerovia2 text-background rounded-lg px-4 py-2 text-center mx-auto w-full max-w-[300px] transition-colors hover:bg-aerovia1/80"
+					>View AeroVia</a
+				>
+			</li>
+			<li class="border border-foreground/30 rounded-lg p-4 flex flex-col gap-4">
+				<div class="flex flex-col sm:flex-row items-center gap-2">
+					<Icon name="message-circle-code" class="w-8 h-8" />
+					<h2 class="text-2xl font-semibold">Messenger</h2>
+					<span class="text-sm text-muted-foreground relative top-px">February 2025</span>
+				</div>
+				<Skills
+					skills={[
+						'React',
+						'Webpack',
+						'Socket.io',
+						'JWT',
+						'Docker',
+						'Pusher',
+						'Vercel',
+						'Neon',
+						'GCloud',
+					]}
+				/>
+				<p class="text-lg us:text-justify">
+					Messenger is a real-time lightweight chat application built with Express.js. It offers
+					group chats as well as one-on-one chats.
+				</p>
+				<a
+					href="https://messenger-su.vercel.app/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="bg-primary hover:opacity-80 rounded-lg px-4 py-2 text-center mx-auto w-full max-w-[300px] transition-opacity text-background"
+					><Icon name="globe" class="w-4 h-4 inline-block mr-2 relative -top-px" /> Live Demo</a
+				>
+				<a
+					href="https://github.com/SerbanUntu/messenger"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="hover:bg-muted/20 border rounded-lg px-4 py-2 text-center mx-auto w-full max-w-[300px] transition-colors"
+					><Icon name="github" class="w-4 h-4 inline-block mr-2 relative -top-px" /> View Code</a
+				>
+			</li>
+			<li class="border border-foreground/30 rounded-lg p-4 flex flex-col gap-4">
+				<div class="flex flex-col sm:flex-row items-center gap-2">
+					<Icon name="anchor" class="w-8 h-8" />
+					<h2 class="text-2xl font-semibold">Battleship</h2>
+					<span class="text-sm text-muted-foreground relative top-px">July 2024</span>
+				</div>
+				<Skills
+					skills={[
+						'JavaScript',
+						'Webpack',
+						'JS Symbols',
+						'JS Prototypes',
+						'Jest',
+						'Event Dispatching',
+						'OOP',
+					]}
+				/>
+				<p class="text-lg us:text-justify">
+					Battleship is a game in which your goal is to fight and defeat the opponent's fleet. It
+					can be played both against a human player and against the computer.
+				</p>
+				<a
+					href="https://serbanuntu.github.io/odin-battleship/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="bg-primary hover:opacity-80 rounded-lg px-4 py-2 text-center mx-auto w-full max-w-[300px] transition-opacity text-background"
+					><Icon name="globe" class="w-4 h-4 inline-block mr-2 relative -top-px" /> Live Demo</a
+				>
+				<a
+					href="https://github.com/SerbanUntu/odin-battleship"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="hover:bg-muted/20 border rounded-lg px-4 py-2 text-center mx-auto w-full max-w-[300px] transition-colors"
+					><Icon name="github" class="w-4 h-4 inline-block mr-2 relative -top-px" /> View Code</a
+				>
+			</li>
+			<li class="border border-foreground/30 rounded-lg p-4 flex flex-col gap-4">
+				<div class="flex flex-col sm:flex-row items-center gap-2">
+					<Icon name="cloudy" class="w-8 h-8" />
+					<h2 class="text-2xl font-semibold">WeatherWatch</h2>
+					<span class="text-sm text-muted-foreground relative top-px">July 2024</span>
+				</div>
+				<Skills
+					skills={[
+						'JavaScript',
+						'UI Design',
+						'Public APIs',
+						'Fetch',
+						'Async/Await',
+						'Asset Optimization',
+					]}
+				/>
+				<p class="text-lg us:text-justify">
+					WeatherWatch is an app that allows you to view the current weather and the weather
+					forecast at any location.
+				</p>
+				<a
+					href="https://serbanuntu.github.io/odin-weather-app/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="bg-primary hover:opacity-80 rounded-lg px-4 py-2 text-center mx-auto w-full max-w-[300px] transition-opacity text-background"
+					><Icon name="globe" class="w-4 h-4 inline-block mr-2 relative -top-px" /> Live Demo</a
+				>
+				<a
+					href="https://github.com/SerbanUntu/odin-weather-app"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="hover:bg-muted/20 border rounded-lg px-4 py-2 text-center mx-auto w-full max-w-[300px] transition-colors"
+					><Icon name="github" class="w-4 h-4 inline-block mr-2 relative -top-px" /> View Code</a
+				>
+			</li>
+			<li class="border border-foreground/30 rounded-lg p-4 flex flex-col gap-4">
+				<div class="flex flex-col sm:flex-row items-center gap-2">
+					<Icon name="notebook-pen" class="w-8 h-8" />
+					<h2 class="text-2xl font-semibold">@spaces</h2>
+					<span class="text-sm text-muted-foreground relative top-px">June 2024</span>
+				</div>
+				<Skills
+					skills={[
+						'Figma',
+						'JavaScript',
+						'Webpack',
+						'Reactive State',
+						'JS Classes',
+						'UI Design',
+						'JS Date API',
+						'CRUD Operations',
+						'Local Storage',
+					]}
+				/>
+				<p class="text-lg us:text-justify">
+					@spaces is an app to create and manage your todos, inspired by Todoist.
+				</p>
+				<a
+					href="https://serbanuntu.github.io/odin-todo-list/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="bg-primary hover:opacity-80 rounded-lg px-4 py-2 text-center mx-auto w-full max-w-[300px] transition-opacity text-background"
+					><Icon name="globe" class="w-4 h-4 inline-block mr-2 relative -top-px" /> Live Demo</a
+				>
+				<a
+					href="https://github.com/SerbanUntu/odin-todo-list"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="hover:bg-muted/20 border rounded-lg px-4 py-2 text-center mx-auto w-full max-w-[300px] transition-colors"
+					><Icon name="github" class="w-4 h-4 inline-block mr-2 relative -top-px" /> View Code</a
+				>
+			</li>
+			<li class="border border-foreground/30 rounded-lg p-4 flex flex-col gap-4">
+				<div class="flex flex-col sm:flex-row items-center gap-2">
+					<Icon name="blocks" class="w-8 h-8" />
+					<h2 class="text-2xl font-semibold">Game Of Life</h2>
+					<span class="text-sm text-muted-foreground relative top-px">September 2023</span>
+				</div>
+				<Skills skills={['JavaScript', 'Data Structures', 'Algorithms', 'CSS Grid']} />
+				<p class="text-lg us:text-justify">
+					A simulation of Conway's Game of Life. It features an interactive grid, a speed slider,
+					modifiable simulation rules, and a set of special patterns that can be inserted.
+				</p>
+				<a
+					href="https://game-of-life-webpage.vercel.app/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="bg-primary hover:opacity-80 rounded-lg px-4 py-2 text-center mx-auto w-full max-w-[300px] transition-opacity text-background"
+					><Icon name="globe" class="w-4 h-4 inline-block mr-2 relative -top-px" /> Live Demo</a
+				>
+				<a
+					href="https://github.com/SerbanUntu/Game-Of-Life-Webpage"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="hover:bg-muted/20 border rounded-lg px-4 py-2 text-center mx-auto w-full max-w-[300px] transition-colors"
+					><Icon name="github" class="w-4 h-4 inline-block mr-2 relative -top-px" /> View Code</a
+				>
+			</li>
+			<li class="border border-foreground/30 rounded-lg p-4 flex flex-col gap-4">
+				<div class="flex flex-col sm:flex-row items-center gap-2">
+					<Icon name="martini" class="w-8 h-8" />
+					<h2 class="text-2xl font-semibold">Cocktail Project</h2>
+					<span class="text-sm text-muted-foreground relative top-px">July 2023</span>
+				</div>
+				<Skills
+					skills={[
+						'JavaScript',
+						'TypeScript',
+						'Webpack',
+						'Public APIs',
+						'Fetch',
+						'Async/Await',
+						'Promises',
+						'DOM Manipulation',
+						'CSS Grid',
+					]}
+				/>
+				<p class="text-lg us:text-justify">
+					My first frontend project, a cocktail database with a search bar and a filter.
+				</p>
+				<a
+					href="https://cocktail-project-serbanuntu.vercel.app/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="bg-primary hover:opacity-80 rounded-lg px-4 py-2 text-center mx-auto w-full max-w-[300px] transition-opacity text-background"
+					><Icon name="globe" class="w-4 h-4 inline-block mr-2 relative -top-px" /> Live Demo</a
+				>
+				<a
+					href="https://github.com/SerbanUntu/Cocktail-Project"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="hover:bg-muted/20 border rounded-lg px-4 py-2 text-center mx-auto w-full max-w-[300px] transition-colors"
+					><Icon name="github" class="w-4 h-4 inline-block mr-2 relative -top-px" /> View Code</a
+				>
+			</li>
+		</ul>
+	</main>
+</Layout>

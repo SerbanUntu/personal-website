@@ -3,6 +3,7 @@
 @theme {
 	--font-sans: 'IBM Plex Sans Variable', ui-sans-serif, system-ui, sans-serif,
 		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	--breakpoint-us: 400px;
 }
 
 @theme inline {
@@ -28,6 +29,9 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+	--color-projectclub: var(--projectclub);
+	--color-aerovia1: var(--aerovia1);
+	--color-aerovia2: var(--aerovia2);
 }
 
 /* Dark Theme */
@@ -39,9 +43,9 @@
   --card-foreground: oklch(0.8 0.01 270);
   --popover: oklch(0.12 0.01 270);
   --popover-foreground: oklch(0.8 0.01 270);
-  --primary: oklch(0.72 0.195 149);
+  --primary: oklch(0.72 0.09 220);
   --primary-foreground: oklch(0.15 0.01 260);
-  --secondary: oklch(0.23 0.01 270);
+  --secondary: oklch(0.72 0.09 140);
   --secondary-foreground: oklch(0.8 0.01 270);
   --muted: oklch(0.23 0.01 270);
   --muted-foreground: oklch(0.7 0.03 260);
@@ -55,6 +59,10 @@
   --border: oklch(0.26 0.01 270);
   --input: oklch(0.23 0.01 270);
   --ring: oklch(0.72 0.195 149);
+
+  --projectclub: oklch(0.72 0.195 149);
+	--aerovia1: oklch(0.656 0.1726 252.18);
+	--aerovia2: oklch(0.581 0.2195 303.24);
 }
 
 @layer base {

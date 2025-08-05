@@ -1,0 +1,13 @@
+---
+const { skills } = Astro.props
+---
+
+<ul class="flex flex-wrap gap-2">
+	{
+		skills.map((skill: string) => (
+			<li>
+				<span class="text-sm rounded-full border border-muted-foreground/20 px-2 py-1 text-muted-foreground relative top-px">{skill}</span>
+			</li>
+		))
+	}
+</ul>
