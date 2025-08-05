@@ -1,5 +1,84 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets'
 ---
 
-<Layout title="Contact | Șerban Untu" description="Reach out to me via email or social media" />
+<Layout title="Contact | Șerban Untu" description="Reach out to me via email or social media">
+	<main class="w-full max-w-3xl mx-auto flex flex-col gap-4 text-lg p-8">
+		<h1 class="text-4xl font-semibold">Contact Me</h1>
+		<p class="text-lg">
+			You can reach out to me via email at <a
+				class="text-primary underline"
+				href="mailto:serban@projectclub.dev">serban@projectclub.dev</a
+			>
+			or on social media.
+		</p>
+		<ul class="flex flex-col gap-4 w-full mt-8">
+			<li>
+				<a
+					href="mailto:serbanuntu@gmail.com"
+					class="text-xl group"
+					target="_blank"
+					rel="noopener noreferrer">
+					<Icon name="mail" class="w-6 h-6 inline-block mr-2 relative -top-px" />
+					<span class="group-hover:text-primary"> Email</span>
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://x.com/SerbanUntu"
+					class="text-xl group"
+					target="_blank"
+					rel="noopener noreferrer">
+					<Image
+						src="/socials/x.png"
+						alt=""
+						width={24}
+						height={24}
+						loading="eager"
+						class="w-6 h-6 inline-block mr-2 relative -top-px invert"
+					/><span class="group-hover:text-primary"> X (Twitter)</span>
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://www.linkedin.com/in/%C8%99erban-untu-a086a12a9/"
+					class="text-xl group"
+					target="_blank"
+					rel="noopener noreferrer">
+					<Image
+						src="/socials/linkedin.png"
+						alt=""
+						width={24}
+						height={24}
+						loading="eager"
+						class="w-6 h-6 inline-block mr-2 relative -top-px invert"
+					/><span class="group-hover:text-primary"> LinkedIn</span>
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://github.com/SerbanUntu"
+					class="text-xl group"
+					target="_blank"
+					rel="noopener noreferrer">
+					<Icon name="github" class="w-6 h-6 inline-block mr-2 relative -top-px" /><span
+						class="group-hover:text-primary">
+						GitHub</span
+					>
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://www.instagram.com/serban.untu/"
+					class="text-xl group"
+					target="_blank"
+					rel="noopener noreferrer">
+					<Icon name="instagram" class="w-6 h-6 inline-block mr-2 relative -top-px" />
+					<span class="group-hover:text-primary"> Instagram</span>
+				</a>
+			</li>
+		</ul>
+	</main>
+</Layout>

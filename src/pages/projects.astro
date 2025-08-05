@@ -2,6 +2,7 @@
 import Skills from '../components/Skills.astro'
 import Layout from '../layouts/Layout.astro'
 import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets'
 ---
 
 <Layout
@@ -16,7 +17,14 @@ import { Icon } from 'astro-icon/components'
 			<li
 				class="border border-projectclub/30 rounded-lg p-4 bg-gradient-to-br from-projectclub/20 to-projectclub/10 flex flex-col gap-4">
 				<div class="flex flex-col sm:flex-row items-center gap-2">
-					<img src="/projectclub.svg" alt="Project Club" class="w-8 h-8" />
+					<Image
+						src="/projectclub.svg"
+						alt="Project Club"
+						width={32}
+						height={32}
+						class="w-8 h-8"
+						loading="eager"
+					/>
 					<h2 class="text-2xl font-semibold">Project Club</h2>
 					<span class="text-sm text-muted-foreground relative top-px">May 2025 - Present</span>
 				</div>
@@ -45,7 +53,14 @@ import { Icon } from 'astro-icon/components'
 			<li
 				class="border border-aerovia1/30 rounded-lg p-4 bg-gradient-to-br from-aerovia1/20 to-aerovia2/20 flex flex-col gap-4">
 				<div class="flex flex-col sm:flex-row items-center gap-2">
-					<img src="/aerovia.svg" alt="AeroVia" class="w-8 h-8" />
+					<Image
+						src="/aerovia.svg"
+						alt="AeroVia"
+						width={32}
+						height={32}
+						class="w-8 h-8"
+						loading="eager"
+					/>
 					<h2 class="text-2xl font-semibold">AeroVia</h2>
 					<span class="text-sm text-muted-foreground relative top-px">December 2024 - Present</span>
 				</div>
