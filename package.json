@@ -9,11 +9,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@fontsource-variable/ibm-plex-sans": "^5.2.6",
-    "@tailwindcss/vite": "^4.1.11",
-    "astro": "^5.12.8",
-    "astro-favicons": "^3.1.5",
+    "@fontsource-variable/ibm-plex-sans": "^5.2.8",
+    "@tailwindcss/vite": "^4.2.4",
+    "astro": "^6.1.9",
+    "astro-favicons": "^3.1.6",
     "astro-icon": "^1.1.5",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.2.4"
   }
 }
