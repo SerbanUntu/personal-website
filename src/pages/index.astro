@@ -1,13 +1,15 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import { Icon } from 'astro-icon/components'
-import { Image } from 'astro:assets'
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Șerban Untu" description="Welcome to my website">
-	<main class="w-full max-w-3xl mx-auto flex flex-col gap-4 text-lg p-8 relative">
+	<main
+		class="w-full max-w-3xl mx-auto flex flex-col gap-4 text-lg p-8 relative"
+	>
 		<h1 class="text-4xl font-semibold">Șerban Untu</h1>
-		<p class="text-xl">Software engineer & entrepreneur.</p>
+		<p class="text-xl">Software engineer.</p>
 		<Image
 			src="/pfp.png"
 			alt=""
@@ -18,11 +20,58 @@ import { Image } from 'astro:assets'
 		/>
 		<div class="flex items-center gap-2">
 			<Icon name="map-pin" />
-			<p>Iași, Romania</p>
+			<p>Delft, Netherlands</p>
 		</div>
 		<p class="us:text-justify">
-			I'm the founder of
-			<a href="https://www.projectclub.dev" target="_blank" class="text-primary underline"
+			Hello! I'm Șerban, a software engineer and student at the
+			<a
+				href="https://www.tudelft.nl/en/onderwijs/opleidingen/bachelors/computer-science-and-engineering/bachelor-of-computer-science-and-engineering"
+				target="_blank"
+				class="text-primary underline"
+				><Image
+					src="/tudelft.svg"
+					alt=""
+					loading="eager"
+					width={16}
+					height={16}
+					class="w-4 h-4 inline-block relative -top-px mr-1"
+				/>Delft University of Tech- nology</a
+			>. I've worked as an intern at
+			<a
+				href="https://www.jetbrains.com/teamcity/"
+				target="_blank"
+				class="text-primary underline"
+				><Image
+					src="/teamcity.png"
+					alt=""
+					loading="eager"
+					width={16}
+					height={16}
+					class="w-4 h-4 inline-block relative -top-px mr-1"
+				/>JetBrains</a
+			>, implementing integrations for TeamCity, the company's all-in-one
+			CI/CD solution. I've also worked at
+			<a
+				href="https://return.energy/"
+				target="_blank"
+				class="text-primary underline"
+				><Image
+					src="/returnenergy.jpg"
+					alt=""
+					loading="eager"
+					width={16}
+					height={16}
+					class="w-4 h-4 inline-block relative -top-px mr-1"
+				/>Return Energy</a
+			> as part of the quantitative finance team, building the execution engine
+			for their bespoke trading platform.
+		</p>
+		<p class="us:text-justify">
+			I've also worked on
+			<a
+				href="https://www.projectclub.dev"
+				target="_blank"
+				class="text-primary underline"
 				><Image
 					src="/projectclub.svg"
 					alt=""
@@ -31,13 +80,14 @@ import { Image } from 'astro:assets'
 					height={16}
 					class="w-4 h-4 inline-block relative -top-px mr-1"
 				/>Project Club</a
-			>, a platform for learning advanced programming concepts by building projects. I'm also Head
-			of Development at
+			>, a platform for learning advanced programming concepts by building
+			projects, and I've been Head of Development at
 			<a
 				href="https://www.aerovia.org"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="text-primary underline">
+				class="text-primary underline"
+			>
 				<Image
 					src="/aerovia.svg"
 					alt=""
@@ -46,8 +96,8 @@ import { Image } from 'astro:assets'
 					height={16}
 					class="w-4 h-4 inline-block relative -top-px mr-1"
 				/>AeroVia</a
-			>, a non-profit organization and community that makes aerospace engineering accessible to
-			everyone.
+			>, a non-profit organization and community that makes aerospace
+			engineering accessible to everyone.
 		</p>
 		<nav class="flex flex-col items-center gap-4 mt-8">
 			<a
