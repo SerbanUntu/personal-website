@@ -20,6 +20,51 @@ import { Image } from "astro:assets";
 				class="border border-foreground/30 rounded-lg p-4 flex flex-col gap-4"
 			>
 				<div class="flex flex-col sm:flex-row items-center gap-2">
+					<Icon name="chart-candlestick" class="w-8 h-8" />
+					<h2 class="text-2xl font-semibold">Low Latency Stock Exchange</h2>
+					<span class="text-sm text-muted-foreground relative top-px"
+						>June 2026</span
+					>
+				</div>
+				<Skills
+					skills={[
+						"C++",
+						"gRPC",
+						"Lock-Free Data Structures",
+						"Shared Memory",
+						"Market Microstructure",
+						"Fuzzing",
+					]}
+				/>
+				<p class="text-lg us:text-justify">
+					A low-latency stock exchange over gRPC. Supports market and limit orders (GTC, IOC, FOK).
+					Publishes market data updates in various formats (OHLC, L1/L2/L3, per-order history) using shared memory.
+				</p>
+				<a
+					href="https://github.com/SerbanUntu/exchange"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="hover:bg-muted/20 border rounded-lg px-4 py-2 text-center mx-auto w-full max-w-[300px] transition-colors"
+					><Icon
+						name="github"
+						class="w-4 h-4 inline-block mr-2 relative -top-px"
+					/> View Code</a
+				>
+				<a
+					href="https://serbanuntu.github.io/exchange/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="hover:bg-muted/20 border rounded-lg px-4 py-2 text-center mx-auto w-full max-w-[300px] transition-colors"
+					><Icon
+						name="book-search"
+						class="w-4 h-4 inline-block mr-2 relative -top-px"
+					/> View Docs</a
+				>
+			</li>
+			<li
+				class="border border-foreground/30 rounded-lg p-4 flex flex-col gap-4"
+			>
+				<div class="flex flex-col sm:flex-row items-center gap-2">
 					<Icon name="braces" class="w-8 h-8" />
 					<h2 class="text-2xl font-semibold">jq clone in Haskell</h2>
 					<span class="text-sm text-muted-foreground relative top-px"
@@ -204,7 +249,8 @@ import { Image } from "astro:assets";
 					arbitrary resolution. Supports textures and materials such
 					as glass, mirrors, and metals. Uses smart pointers and
 					Modern C++ features to achieve memory safety while
-					maintaining very fast render times.
+					maintaining very fast render times. Renders on multiple
+					threads in parallel.
 				</p>
 				<a
 					href="https://github.com/SerbanUntu/ray-tracer"
@@ -215,6 +261,16 @@ import { Image } from "astro:assets";
 						name="github"
 						class="w-4 h-4 inline-block mr-2 relative -top-px"
 					/> View Code</a
+				>
+				<a
+					href="https://serbanuntu.github.io/ray-tracer/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="hover:bg-muted/20 border rounded-lg px-4 py-2 text-center mx-auto w-full max-w-[300px] transition-colors"
+					><Icon
+						name="book-search"
+						class="w-4 h-4 inline-block mr-2 relative -top-px"
+					/> View Docs</a
 				>
 			</li>
 			<li
@@ -231,7 +287,7 @@ import { Image } from "astro:assets";
 					/>
 					<h2 class="text-2xl font-semibold">Project Club</h2>
 					<span class="text-sm text-muted-foreground relative top-px"
-						>May 2025 - Ausust 2025</span
+						>May 2025 - August 2025</span
 					>
 				</div>
 				<Skills
